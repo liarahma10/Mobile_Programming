@@ -80,3 +80,11 @@ strong {
   color: #d9534f;
   font-size: 18px;
 }
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
