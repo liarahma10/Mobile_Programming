@@ -6,6 +6,13 @@ use App\Helpers\ResponseHelper;
 use App\Models\Stopwatch;
 use App\Models\Timer;
 
+$method = $_SERVER['REQUEST_METHOD'];
+
+$inputJSON = file_get_contents('php://input');
+$input = json_decode($inputJSON, true) ?? [];
+
+$query = $_GET ?? [];
+
 session_start();
 
 if (!isset($_SESSION['stopwatch']) || !isset($_SESSION['timer'])) {
