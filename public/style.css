@@ -1,19 +1,25 @@
+
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; /* Font modern */
+  font-family: "Poppins", sans-serif;
 }
 
-/* Wallpaper Background */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('https://images.unsplash.com/photo-1517813312057-00a2e1822f35?auto=format&fit=crop&w=1350&q=80')
-    no-repeat center center/cover;
+
+  /* Wallpaper aesthetic */
+  background: 
+    linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1517813312057-00a2e1822f35?auto=format&fit=crop&w=1350&q=80')
+    no-repeat center center / cover;
 }
 
 /* Container transparan elegan */
@@ -24,58 +30,53 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
 }
 
 h1 {
-  font-size: 26px;
-  color: #222;
-  margin-bottom: 18px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
 p {
-  font-size: 17px;
-  color: #444;
-  margin-bottom: 18px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-/* Button modern */
 button {
-  padding: 10px 22px;
-  margin: 6px;
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
   border: none;
   color: #fff;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background: linear-gradient(135deg, #0056b3, #003f80);
-  transform: translateY(-2px);
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-/* Input */
 input[type="number"] {
-  width: 90px;
-  padding: 9px;
+  width: 80px;
+  padding: 8px;
   font-size: 16px;
-  border: 1px solid #bbb;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
-/* Form wrapper */
 form {
   margin-top: 10px;
 }
 
-/* Result highlight */
 strong {
-  color: #c92a2a;
-  font-size: 19px;
+  color: #d9534f;
+  font-size: 18px;
 }
-
