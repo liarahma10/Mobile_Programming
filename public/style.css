@@ -1,9 +1,12 @@
+
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,9 +14,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #ffe5ec;
+
+  /* Wallpaper aesthetic */
+  background: 
+    linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1517813312057-00a2e1822f35?auto=format&fit=crop&w=1350&q=80')
+    no-repeat center center / cover;
 }
 
+/* Container transparan elegan */
 .container {
   width: 400px;
   padding: 20px;
@@ -21,17 +30,19 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
+  backdrop-filter: blur(8px);
 }
 
 h1 {
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 p {
-  font-size: 18px;
-  color: #666;
+  font-size: 20px;
+  color: #555;
   margin-bottom: 20px;
 }
 
@@ -42,13 +53,14 @@ button {
   border: none;
   color: #fff;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s ease;
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 input[type="number"] {
@@ -56,7 +68,7 @@ input[type="number"] {
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-top: 10px;
 }
 
@@ -67,4 +79,12 @@ form {
 strong {
   color: #d9534f;
   font-size: 18px;
+}
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
 }
